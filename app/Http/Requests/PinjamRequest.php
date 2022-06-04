@@ -29,7 +29,7 @@ class PinjamRequest extends FormRequest
             'nama'              => 'required',
             'nomor_induk'       => 'required',
             'hp'                => 'required|max:13|starts_with:62',
-            'email'             => 'required|email|ends_with:@uin-suska.ac.id,@students.uin-suska.ac.id,',
+            // 'email'             => 'required|email|ends_with:@uin-suska.ac.id,@students.uin-suska.ac.id,',
             'nomor'             => 'required',
             'tanggal_surat'     => 'required',
             'nama_kegiatan'     => 'required',

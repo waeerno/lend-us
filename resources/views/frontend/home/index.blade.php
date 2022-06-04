@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<!--begin::Head-->
-	@include('welcome.layouts.head')
+	@include('frontend.layouts.head')
 	<!--end::Head-->
 	<!--begin::Body-->
 	<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" data-bs-offset="200" class="bg-white position-relative">
@@ -16,7 +16,7 @@
 					<div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
 						<!--begin::Container-->
 						<div class="container">
-							<!--begin::Wrapper-->
+							<!--begin::Wrapper-->,,
 							<div class="d-flex align-items-center justify-content-between">
 								<!--begin::Logo-->
 								<div class="d-flex align-items-center flex-equal">
@@ -34,8 +34,8 @@
 									<!--end::Mobile menu toggle-->
 									<!--begin::Logo image-->
 									<a href="">
-										<img alt="Logo" src="{{asset('media/logos/logo-putih.png')}}" class="logo-default h-25 h-lg-60px" />
-										<img alt="Logo" src="{{asset('media/logos/logo-hitam.png')}}" class="logo-sticky h-25 h-lg-60px" />
+										{{-- <img alt="Logo" src="{{asset('media/logos/logo-putih.png')}}" class="logo-default h-25 h-lg-60px" />
+										<img alt="Logo" src="{{asset('media/logos/logo-hitam.png')}}" class="logo-sticky h-25 h-lg-60px" /> --}}
 									</a>
 									<!--end::Logo image-->
 								</div>
@@ -44,7 +44,7 @@
 								<div class="d-lg-block" id="kt_header_nav_wrapper">
 									<div class="d-lg-block p-5 p-lg-0" data-kt-drawer="true" data-kt-drawer-name="landing-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="200px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_landing_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
 										<!--begin::Menu-->
-										@include('welcome.layouts.nav')
+										@include('frontend.layouts.nav')
 										<!--end::Menu-->
 									</div>
 								</div>
@@ -369,305 +369,7 @@
 						<!--end::Author-->
 					</div>
 					<!--end::Container-->
-				</div>
-				<!--end::Wrapper-->
-				<!--begin::Curve bottom-->
-				<div class="landing-curve landing-dark-color">
-					<svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
-					</svg>
-				</div>
-				<!--end::Curve bottom-->
-			</div>
-			<!--end::Statistics Section-->
-			<!--begin::Projects Section-->
-			<div class="mb-lg-n15 position-relative z-index-2">
-				<!--begin::Container-->
-				<div class="container">
-					<!--begin::Card-->
-					<div class="card" style="filter: drop-shadow(0px 0px 40px rgba(68, 81, 96, 0.08))">
-						<!--begin::Card body-->
-						<div class="card-body p-lg-20">
-							<!--begin::Heading-->
-							<div class="text-center mb-5 mb-lg-10">
-								<!--begin::Title-->
-								<h3 class="fs-2hx text-dark mb-5" id="portfolio" data-kt-scroll-offset="{default: 100, lg: 150}">Our Projects</h3>
-								<!--end::Title-->
-							</div>
-							<!--end::Heading-->
-							<!--begin::Tabs wrapper-->
-							<div class="d-flex flex-center mb-5 mb-lg-15">
-								<!--begin::Tabs-->
-								<ul class="nav border-transparent flex-center fs-5 fw-bold">
-									<li class="nav-item">
-										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6 active" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_latest">Latest</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_web_design">Lab PTIPD</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_mobile_apps">Zoom</a>
-									</li>
-								</ul>
-								<!--end::Tabs-->
-							</div>
-							<!--end::Tabs wrapper-->
-							<!--begin::Tabs content-->
-							<div class="tab-content">
-								<!--begin::Tab pane-->
-								<div class="tab-pane fade show active" id="kt_landing_projects_latest">
-									<!--begin::Row-->
-									<div class="row g-10">
-										<!--begin::Col-->
-										<div class="col-lg-6">
-											<!--begin::Item-->
-											<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x600/img-23.jpg')}}">
-												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('{{asset('media/stock/600x600/img-23.jpg')}}')"></div>
-												<!--end::Image-->
-												<!--begin::Action-->
-												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-													<i class="bi bi-eye-fill fs-3x text-white"></i>
-												</div>
-												<!--end::Action-->
-											</a>
-											<!--end::Item-->
-										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-lg-6">
-											<!--begin::Row-->
-											<div class="row g-10 mb-10">
-												<!--begin::Col-->
-												<div class="col-lg-6">
-													<!--begin::Item-->
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x600/img-22.jpg')}}">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{{asset('media/stock/600x600/img-22.jpg')}}')"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<i class="bi bi-eye-fill fs-3x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Item-->
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col-lg-6">
-													<!--begin::Item-->
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x600/img-21.jpg')}}">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{{asset('media/stock/600x600/img-21.jpg')}}')"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<i class="bi bi-eye-fill fs-3x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Item-->
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->
-											<!--begin::Item-->
-											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x400/img-20.jpg')}}">
-												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{{asset('media/stock/600x600/img-20.jpg')}}')"></div>
-												<!--end::Image-->
-												<!--begin::Action-->
-												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-													<i class="bi bi-eye-fill fs-3x text-white"></i>
-												</div>
-												<!--end::Action-->
-											</a>
-											<!--end::Item-->
-										</div>
-										<!--end::Col-->
-									</div>
-									<!--end::Row-->
-								</div>
-								<!--end::Tab pane-->
-								<!--begin::Tab pane-->
-								<div class="tab-pane fade" id="kt_landing_projects_web_design">
-									<!--begin::Row-->
-									<div class="row g-10">
-										<!--begin::Col-->
-										<div class="col-lg-6">
-											<!--begin::Item-->
-											<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x600/img-11.jpg')}}">
-												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('{{asset('media/stock/600x600/img-11.jpg')}}')"></div>
-												<!--end::Image-->
-												<!--begin::Action-->
-												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-													<i class="bi bi-eye-fill fs-3x text-white"></i>
-												</div>
-												<!--end::Action-->
-											</a>
-											<!--end::Item-->
-										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-lg-6">
-											<!--begin::Row-->
-											<div class="row g-10 mb-10">
-												<!--begin::Col-->
-												<div class="col-lg-6">
-													<!--begin::Item-->
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x600/img-12.jpg')}}">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{{asset('media/stock/600x600/img-12.jpg')}}')"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<i class="bi bi-eye-fill fs-3x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Item-->
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col-lg-6">
-													<!--begin::Item-->
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x600/img-21.jpg')}}">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{{asset('media/stock/600x600/img-21.jpg')}}')"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<i class="bi bi-eye-fill fs-3x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Item-->
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->
-											<!--begin::Item-->
-											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x400/img-20.jpg')}}">
-												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{{asset('media/stock/600x600/img-20.jpg')}}')"></div>
-												<!--end::Image-->
-												<!--begin::Action-->
-												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-													<i class="bi bi-eye-fill fs-3x text-white"></i>
-												</div>
-												<!--end::Action-->
-											</a>
-											<!--end::Item-->
-										</div>
-										<!--end::Col-->
-									</div>
-									<!--end::Row-->
-								</div>
-								<!--end::Tab pane-->
-								<!--begin::Tab pane-->
-								<div class="tab-pane fade" id="kt_landing_projects_mobile_apps">
-									<!--begin::Row-->
-									<div class="row g-10">
-										<!--begin::Col-->
-										<div class="col-lg-6">
-											<!--begin::Row-->
-											<div class="row g-10 mb-10">
-												<!--begin::Col-->
-												<div class="col-lg-6">
-													<!--begin::Item-->
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x600/img-16.jpg')}}">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{{asset('media/stock/600x600/img-16.jpg')}}')"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<i class="bi bi-eye-fill fs-3x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Item-->
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col-lg-6">
-													<!--begin::Item-->
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x600/img-12.jpg')}}">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{{asset('media/stock/600x600/img-12.jpg')}}')"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<i class="bi bi-eye-fill fs-3x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Item-->
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->
-											<!--begin::Item-->
-											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x400/img-15.jpg')}}">
-												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{{asset('media/stock/600x600/img-15.jpg')}}')"></div>
-												<!--end::Image-->
-												<!--begin::Action-->
-												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-													<i class="bi bi-eye-fill fs-3x text-white"></i>
-												</div>
-												<!--end::Action-->
-											</a>
-											<!--end::Item-->
-										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-lg-6">
-											<!--begin::Item-->
-											<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="{{asset('media/stock/600x600/img-23.jpg')}}">
-												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('{{asset('media/stock/600x600/img-23.jpg')}}')"></div>
-												<!--end::Image-->
-												<!--begin::Action-->
-												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-													<i class="bi bi-eye-fill fs-3x text-white"></i>
-												</div>
-												<!--end::Action-->
-											</a>
-											<!--end::Item-->
-										</div>
-										<!--end::Col-->
-									</div>
-									<!--end::Row-->
-								</div>
-								<!--end::Tab pane-->
-							</div>
-							<!--end::Tabs content-->
-						</div>
-						<!--end::Card body-->
-					</div>
-					<!--end::Card-->
-				</div>
-				<!--end::Container-->
-			</div>
-			<!--end::Projects Section-->
-			<!--begin::Pricing Section-->
-			<div class="mt-sm-n20">
-				<!--begin::Curve top-->
-				<div class="landing-curve landing-dark-color">
-					<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
-					</svg>
-				</div>
-				<!--end::Curve top-->
-			</div>
-			<!--end::Pricing Section-->
-			<!--begin::Footer Section-->
-			<div class="mb-0">
-				<!--begin::Wrapper-->
-				<div class="landing-dark-bg pt-20">
-					<!--begin::Container-->
+                    <!--begin::Container-->
 					<div class="container">
 						<!--begin::Row-->
 						<div class="d-flex text-center row py-10 py-lg-20">
@@ -679,8 +381,8 @@
 									<h2 class="text-white">punya pertanyaan lebih lanjut?</h2>
 									<!--end::Title-->
 									<!--begin::Text-->
-									<span class="fw-normal fs-4 text-gray-700">Hubungi kami di
-									<a href="https://wa.me/628117627773" class="text-white opacity-50 text-hover-primary">0811-762-7773</a></span>
+									<span class="fw-normal fs-4 text-gray-700">Hubungi kami di pelayanan C3
+									<a href="https://wa.me/628117627773" class="text-white opacity-50 text-hover-primary">0811-762-7773</a> <u>Hanya whatsapp pada jam kerja</u></span>
 									<!--end::Text-->
 								</div>
 								<!--end::Block-->
@@ -690,6 +392,15 @@
 						<!--end::Row-->
 					</div>
 					<!--end::Container-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Statistics Section-->
+			<!--begin::Footer Section-->
+			<div class="mb-0">
+				<!--begin::Wrapper-->
+				<div class="landing-dark-bg pt-20">
+
 					<!--begin::Separator-->
 					<div class="landing-dark-separator"></div>
 					<!--end::Separator-->
@@ -733,7 +444,7 @@
 		<!--end::Root-->
 		<!--end::Main-->
 		<!--begin::Javascript-->
-	    @include('welcome.layouts.script')
+	    @include('frontend.layouts.script')
 		<!--end::Javascript-->
 	</body>
 	<!--end::Body-->

@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome.index');
+    return view('frontend.home.index');
 });
 
 Route::resource('pinjam', PinjamController::class);
