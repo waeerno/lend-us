@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PeriksaController;
 use App\Http\Controllers\PinjamController;
 use Illuminate\Support\Facades\Route;
@@ -22,8 +23,12 @@ Route::get('/', function () {
 Route::resource('pinjam', PinjamController::class);
 Route::resource('periksa', PeriksaController::class);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'role:admin'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'role:admin'])->name('dashboard');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+});
 
 require __DIR__ . '/auth.php';

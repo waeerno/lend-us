@@ -63,7 +63,7 @@ class PinjamController extends Controller
             'data' => Pinjam::where('kode_pinjam', $id)->first()
         ];
 
-        return view('welcome.pinjam')->with($params);
+        return view('frontend.pinjam.index')->with($params);
     }
 
     /**
